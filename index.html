@@ -30,26 +30,20 @@
       --navy-deep: #0a1728;
       --navy-soft: #172c43;
       --navy-line: #304155;
-
       --yellow: #efae32;
       --yellow-light: #ffc95e;
-
       --paper: #f8f7f3;
       --white: #ffffff;
       --text: #293542;
       --muted: #64707b;
       --line: #dedfdc;
       --light-text: #c3cbd4;
-
       --whatsapp: #178d50;
-
       --heading: "Barlow Condensed", "Arial Narrow", sans-serif;
       --body: "Source Sans 3", Arial, sans-serif;
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     html {
       scroll-behavior: smooth;
@@ -66,9 +60,7 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3, p, figure {
-      margin: 0;
-    }
+    h1, h2, h3, p, figure { margin: 0; }
 
     h1, h2, h3 {
       font-family: var(--heading);
@@ -85,13 +77,8 @@
       max-width: 100%;
     }
 
-    button, input, select {
-      font: inherit;
-    }
-
-    button {
-      cursor: pointer;
-    }
+    button, input, select { font: inherit; }
+    button { cursor: pointer; }
 
     button, a {
       -webkit-tap-highlight-color: transparent;
@@ -110,9 +97,7 @@
       margin-inline: auto;
     }
 
-    .section {
-      padding: 100px 0;
-    }
+    .section { padding: 100px 0; }
 
     .eyebrow {
       display: flex;
@@ -193,9 +178,7 @@
       color: var(--navy-deep);
     }
 
-    .button-primary:hover {
-      background: var(--yellow-light);
-    }
+    .button-primary:hover { background: var(--yellow-light); }
 
     .button-outline {
       border-color: rgba(255,255,255,.45);
@@ -213,9 +196,7 @@
       color: var(--white);
     }
 
-    .button-whatsapp:hover {
-      background: #11713f;
-    }
+    .button-whatsapp:hover { background: #11713f; }
 
     /* HEADER */
 
@@ -308,9 +289,7 @@
       color: var(--white);
     }
 
-    .menu-toggle .close-icon {
-      display: none;
-    }
+    .menu-toggle .close-icon { display: none; }
 
     .menu-toggle[aria-expanded="true"] .menu-icon {
       display: none;
@@ -326,9 +305,7 @@
       border-top: 1px solid var(--navy-line);
     }
 
-    .mobile-nav.open {
-      display: grid;
-    }
+    .mobile-nav.open { display: grid; }
 
     .mobile-nav a {
       padding: 11px 4px;
@@ -355,9 +332,7 @@
       transition: opacity 1s ease;
     }
 
-    .hero-slide.active {
-      opacity: 1;
-    }
+    .hero-slide.active { opacity: 1; }
 
     .hero-slide img {
       width: 100%;
@@ -370,13 +345,12 @@
       position: absolute;
       inset: 0;
       z-index: -1;
-      background:
-        linear-gradient(
-          90deg,
-          rgba(7,18,31,.91) 0%,
-          rgba(7,18,31,.7) 45%,
-          rgba(7,18,31,.2) 100%
-        );
+      background: linear-gradient(
+        90deg,
+        rgba(7,18,31,.91) 0%,
+        rgba(7,18,31,.7) 45%,
+        rgba(7,18,31,.2) 100%
+      );
     }
 
     .hero-inner {
@@ -406,9 +380,7 @@
       line-height: .98;
     }
 
-    .hero h1 span {
-      color: var(--yellow-light);
-    }
+    .hero h1 span { color: var(--yellow-light); }
 
     .hero-copy {
       max-width: 470px;
@@ -423,52 +395,6 @@
       flex-wrap: wrap;
       gap: 13px;
       margin-top: 32px;
-    }
-
-    .hero-location {
-      display: flex;
-      align-items: center;
-      gap: 8px;
-      margin-top: 27px;
-      color: #aebac7;
-      font-size: 13px;
-      letter-spacing: .03em;
-    }
-
-    .hero-location .icon {
-      width: 16px;
-      height: 16px;
-    }
-
-    .slider-controls {
-      position: absolute;
-      right: 34px;
-      bottom: 145px;
-      display: flex;
-      gap: 6px;
-    }
-
-    .slider-arrow,
-    .slider-pause {
-      display: grid;
-      width: 43px;
-      height: 43px;
-      place-items: center;
-      border: 1px solid rgba(255,255,255,.35);
-      border-radius: 2px;
-      background: rgba(9,22,40,.3);
-      color: var(--white);
-    }
-
-    .slider-arrow:hover,
-    .slider-pause:hover {
-      background: var(--navy);
-    }
-
-    .slider-arrow .icon,
-    .slider-pause .icon {
-      width: 19px;
-      height: 19px;
     }
 
     .slider-dots {
@@ -496,9 +422,7 @@
       background: rgba(255,255,255,.35);
     }
 
-    .slider-dot.active::after {
-      background: var(--yellow);
-    }
+    .slider-dot.active::after { background: var(--yellow); }
 
     /* BENEFITS */
 
@@ -523,13 +447,9 @@
       padding: 27px 24px;
     }
 
-    .benefit + .benefit {
-      border-left: 1px solid var(--line);
-    }
+    .benefit + .benefit { border-left: 1px solid var(--line); }
 
-    .benefit-icon {
-      color: #9c6a18;
-    }
+    .benefit-icon { color: #9c6a18; }
 
     .benefit-icon .icon {
       width: 33px;
@@ -560,13 +480,8 @@
       background: var(--navy);
     }
 
-    .services .eyebrow {
-      color: var(--yellow);
-    }
-
-    .services .section-title {
-      color: var(--white);
-    }
+    .services .eyebrow { color: var(--yellow); }
+    .services .section-title { color: var(--white); }
 
     .services-heading {
       display: flex;
@@ -602,9 +517,7 @@
       border-left: 1px solid var(--navy-line);
     }
 
-    .service-card:hover {
-      background: var(--navy-soft);
-    }
+    .service-card:hover { background: var(--navy-soft); }
 
     .service-top {
       display: flex;
@@ -613,9 +526,7 @@
       gap: 15px;
     }
 
-    .service-icon {
-      color: var(--yellow);
-    }
+    .service-icon { color: var(--yellow); }
 
     .service-icon .icon {
       width: 58px;
@@ -676,9 +587,7 @@
       font-size: 15px;
     }
 
-    .step:first-child {
-      padding-left: 0;
-    }
+    .step:first-child { padding-left: 0; }
 
     .step strong {
       color: var(--yellow);
@@ -750,15 +659,11 @@
       font-weight: 600;
     }
 
-    .value .icon {
-      color: #98681f;
-    }
+    .value .icon { color: #98681f; }
 
     /* TESTIMONIALS */
 
-    .testimonials {
-      background: #eeeee8;
-    }
+    .testimonials { background: #eeeee8; }
 
     .testimonials-grid {
       display: grid;
@@ -885,9 +790,7 @@
       font-weight: 600;
     }
 
-    .field-wide {
-      grid-column: 1 / -1;
-    }
+    .field-wide { grid-column: 1 / -1; }
 
     input, select {
       width: 100%;
@@ -901,9 +804,7 @@
       font-size: 16px;
     }
 
-    input::placeholder {
-      color: #808a91;
-    }
+    input::placeholder { color: #808a91; }
 
     .form-submit {
       width: 100%;
@@ -939,9 +840,7 @@
       font-weight: 600;
     }
 
-    .final-cta h2 span {
-      color: var(--yellow);
-    }
+    .final-cta h2 span { color: var(--yellow); }
 
     .final-cta p {
       margin-top: 13px;
@@ -949,9 +848,7 @@
       font-size: 18px;
     }
 
-    .final-cta .button {
-      flex: 0 0 auto;
-    }
+    .final-cta .button { flex: 0 0 auto; }
 
     /* FOOTER */
 
@@ -1005,9 +902,7 @@
       font-size: 14px;
     }
 
-    .footer a:hover {
-      color: var(--yellow);
-    }
+    .footer a:hover { color: var(--yellow); }
 
     .footer-contact a {
       display: block;
@@ -1045,34 +940,20 @@
       box-shadow: 0 3px 12px rgba(0,0,0,.14);
     }
 
-    .floating-whatsapp:hover {
-      background: #11713f;
-    }
+    .floating-whatsapp:hover { background: #11713f; }
 
     /* RESPONSIVE */
 
     @media (min-width: 1101px) {
-      .mobile-nav.open {
-        display: none;
-      }
+      .mobile-nav.open { display: none; }
     }
 
     @media (max-width: 1100px) {
-      .desktop-nav {
-        display: none;
-      }
+      .desktop-nav { display: none; }
+      .menu-toggle { display: flex; }
 
-      .menu-toggle {
-        display: flex;
-      }
-
-      .services-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .service-card:nth-child(3) {
-        border-left: 0;
-      }
+      .services-grid { grid-template-columns: 1fr 1fr; }
+      .service-card:nth-child(3) { border-left: 0; }
 
       .service-card:nth-child(n+3) {
         border-top: 1px solid var(--navy-line);
@@ -1083,58 +964,31 @@
         padding: 24px 16px;
       }
 
-      .benefit strong {
-        font-size: 25px;
-      }
+      .benefit strong { font-size: 25px; }
 
       .benefit-icon .icon {
         width: 27px;
         height: 27px;
       }
 
-      .about-grid,
-      .contact-grid {
-        gap: 38px;
-      }
-
-      .steps {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .step {
-        padding-left: 0;
-      }
+      .about-grid, .contact-grid { gap: 38px; }
+      .steps { grid-template-columns: 1fr 1fr; }
+      .step { padding-left: 0; }
     }
 
     @media (max-width: 760px) {
-      .container {
-        width: calc(100% - 36px);
-      }
-
-      .section {
-        padding: 72px 0;
-      }
+      .container { width: calc(100% - 36px); }
+      .section { padding: 72px 0; }
 
       .header-row {
         min-height: 80px;
         gap: 12px;
       }
 
-      .brand-logo img {
-        height: 51px;
-      }
-
-      .brand-name {
-        font-size: 23px;
-      }
-
-      .brand-tagline {
-        font-size: 10px;
-      }
-
-      .header-quote {
-        display: none;
-      }
+      .brand-logo img { height: 51px; }
+      .brand-name { font-size: 23px; }
+      .brand-tagline { font-size: 10px; }
+      .header-quote { display: none; }
 
       .hero {
         height: auto;
@@ -1147,9 +1001,7 @@
         padding-bottom: 195px;
       }
 
-      .hero h1 {
-        font-size: clamp(53px, 10vw, 73px);
-      }
+      .hero h1 { font-size: clamp(53px, 10vw, 73px); }
 
       .hero-copy {
         max-width: 360px;
@@ -1167,47 +1019,22 @@
         font-size: 15px;
       }
 
-      .hero-location {
-        font-size: 12px;
-      }
-
-      .slider-controls {
-        right: 18px;
-        bottom: 118px;
-      }
-
       .slider-dots {
         bottom: 127px;
         left: 18px;
       }
 
-      .benefits {
-        margin-top: -65px;
-      }
-
-      .benefits-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .benefit {
-        padding: 22px 17px;
-      }
-
-      .benefit:nth-child(3) {
-        border-left: 0;
-      }
+      .benefits { margin-top: -65px; }
+      .benefits-grid { grid-template-columns: 1fr 1fr; }
+      .benefit { padding: 22px 17px; }
+      .benefit:nth-child(3) { border-left: 0; }
 
       .benefit:nth-child(n+3) {
         border-top: 1px solid var(--line);
       }
 
-      .services {
-        padding-top: 112px;
-      }
-
-      .services-heading {
-        display: block;
-      }
+      .services { padding-top: 112px; }
+      .services-heading { display: block; }
 
       .services-heading > p {
         max-width: none;
@@ -1221,22 +1048,15 @@
         grid-template-columns: 1fr;
       }
 
-      .about-grid {
-        gap: 40px;
-      }
+      .about-grid { gap: 40px; }
 
       .testimonials-grid {
         gap: 30px;
         margin-top: 32px;
       }
 
-      .testimonial blockquote {
-        margin-bottom: 19px;
-      }
-
-      .quote-form {
-        padding: 27px 22px;
-      }
+      .testimonial blockquote { margin-bottom: 19px; }
+      .quote-form { padding: 27px 22px; }
 
       .final-cta-row {
         align-items: flex-start;
@@ -1249,9 +1069,7 @@
         gap: 32px;
       }
 
-      .floating-whatsapp span {
-        display: none;
-      }
+      .floating-whatsapp span { display: none; }
 
       .floating-whatsapp {
         right: 15px;
@@ -1262,9 +1080,7 @@
         padding: 0;
       }
 
-      .copyright {
-        padding-right: 58px;
-      }
+      .copyright { padding-right: 58px; }
     }
 
     @media (max-width: 450px) {
@@ -1273,9 +1089,7 @@
         grid-template-columns: 1fr;
       }
 
-      .service-card {
-        min-height: 265px;
-      }
+      .service-card { min-height: 265px; }
 
       .service-card + .service-card {
         border-top: 1px solid var(--navy-line);
@@ -1288,29 +1102,12 @@
         gap: 12px;
       }
 
-      .benefit p {
-        font-size: 12px;
-      }
-
-      .steps {
-        grid-template-columns: 1fr;
-      }
-
-      .step {
-        padding-top: 17px;
-      }
-
-      .brand-tagline {
-        letter-spacing: 0;
-      }
-
-      .hero h1 {
-        font-size: 54px;
-      }
-
-      .hero-buttons {
-        gap: 10px;
-      }
+      .benefit p { font-size: 12px; }
+      .steps { grid-template-columns: 1fr; }
+      .step { padding-top: 17px; }
+      .brand-tagline { letter-spacing: 0; }
+      .hero h1 { font-size: 54px; }
+      .hero-buttons { gap: 10px; }
 
       .hero-buttons .button {
         padding-inline: 14px;
@@ -1325,9 +1122,7 @@
     }
 
     @media (prefers-reduced-motion: reduce) {
-      html {
-        scroll-behavior: auto;
-      }
+      html { scroll-behavior: auto; }
 
       *,
       *::before,
@@ -1340,8 +1135,7 @@
 </head>
 
 <body>
-
-  <!-- ICONOS SVG INCLUIDOS EN EL ARCHIVO -->
+  <!-- ICONOS SVG -->
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width="0"
@@ -1360,22 +1154,6 @@
 
       <symbol id="i-arrow" viewBox="0 0 24 24">
         <path d="M3 12h17M14 6l6 6-6 6"/>
-      </symbol>
-
-      <symbol id="i-left" viewBox="0 0 24 24">
-        <path d="m15 5-7 7 7 7"/>
-      </symbol>
-
-      <symbol id="i-right" viewBox="0 0 24 24">
-        <path d="m9 5 7 7-7 7"/>
-      </symbol>
-
-      <symbol id="i-pause" viewBox="0 0 24 24">
-        <path d="M8 5v14M16 5v14"/>
-      </symbol>
-
-      <symbol id="i-play" viewBox="0 0 24 24">
-        <path d="m8 5 11 7-11 7Z"/>
       </symbol>
 
       <symbol id="i-clock" viewBox="0 0 32 32">
@@ -1528,7 +1306,6 @@
   </header>
 
   <main>
-
     <section
       id="inicio"
       class="hero"
@@ -1593,13 +1370,6 @@
               </svg>
             </a>
           </div>
-
-          <p class="hero-location">
-            <svg class="icon" aria-hidden="true">
-              <use href="#i-pin"></use>
-            </svg>
-            San Pedro Sula y alrededores
-          </p>
         </div>
       </div>
 
@@ -1608,35 +1378,13 @@
         <button class="slider-dot" type="button" aria-label="Ir a imagen 2" aria-pressed="false"></button>
         <button class="slider-dot" type="button" aria-label="Ir a imagen 3" aria-pressed="false"></button>
       </div>
-
-      <div class="slider-controls">
-        <button class="slider-arrow slider-prev" type="button" aria-label="Imagen anterior">
-          <svg class="icon" aria-hidden="true">
-            <use href="#i-left"></use>
-          </svg>
-        </button>
-
-        <button class="slider-pause" type="button" aria-label="Pausar carrusel" aria-pressed="false">
-          <svg class="icon" aria-hidden="true">
-            <use href="#i-pause"></use>
-          </svg>
-        </button>
-
-        <button class="slider-arrow slider-next" type="button" aria-label="Imagen siguiente">
-          <svg class="icon" aria-hidden="true">
-            <use href="#i-right"></use>
-          </svg>
-        </button>
-      </div>
     </section>
 
     <section class="benefits" aria-label="Ventajas del servicio">
       <div class="container benefits-grid">
         <div class="benefit">
           <span class="benefit-icon">
-            <svg class="icon" aria-hidden="true">
-              <use href="#i-clock"></use>
-            </svg>
+            <svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg>
           </span>
           <div>
             <strong>24/7</strong>
@@ -1646,9 +1394,7 @@
 
         <div class="benefit">
           <span class="benefit-icon">
-            <svg class="icon" aria-hidden="true">
-              <use href="#i-response"></use>
-            </svg>
+            <svg class="icon" aria-hidden="true"><use href="#i-response"></use></svg>
           </span>
           <div>
             <strong>15–25 min</strong>
@@ -1658,9 +1404,7 @@
 
         <div class="benefit">
           <span class="benefit-icon">
-            <svg class="icon" aria-hidden="true">
-              <use href="#i-pin"></use>
-            </svg>
+            <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
           </span>
           <div>
             <strong>Toda SPS</strong>
@@ -1670,9 +1414,7 @@
 
         <div class="benefit">
           <span class="benefit-icon">
-            <svg class="icon" aria-hidden="true">
-              <use href="#i-quote"></use>
-            </svg>
+            <svg class="icon" aria-hidden="true"><use href="#i-quote"></use></svg>
           </span>
           <div>
             <strong>Precio claro</strong>
@@ -1701,21 +1443,15 @@
           >
             <div class="service-top">
               <span class="service-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-car"></use>
-                </svg>
+                <svg class="icon" aria-hidden="true"><use href="#i-car"></use></svg>
               </span>
               <span class="service-number">01</span>
             </div>
-
             <h3>Vehículos particulares</h3>
             <p>Remolque seguro de autos, pickups y camionetas.</p>
-
             <span class="service-link">
               Cotizar servicio
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-arrow"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
             </span>
           </a>
 
@@ -1727,21 +1463,15 @@
           >
             <div class="service-top">
               <span class="service-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-truck"></use>
-                </svg>
+                <svg class="icon" aria-hidden="true"><use href="#i-truck"></use></svg>
               </span>
               <span class="service-number">02</span>
             </div>
-
             <h3>Vehículos pesados</h3>
             <p>Asistencia para camiones y unidades de carga.</p>
-
             <span class="service-link">
               Cotizar servicio
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-arrow"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
             </span>
           </a>
 
@@ -1753,21 +1483,15 @@
           >
             <div class="service-top">
               <span class="service-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-tow"></use>
-                </svg>
+                <svg class="icon" aria-hidden="true"><use href="#i-tow"></use></svg>
               </span>
               <span class="service-number">03</span>
             </div>
-
             <h3>Rescate en carretera</h3>
             <p>¿Te quedaste varado? Vamos por vos.</p>
-
             <span class="service-link">
               Cotizar servicio
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-arrow"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
             </span>
           </a>
 
@@ -1779,21 +1503,15 @@
           >
             <div class="service-top">
               <span class="service-icon">
-                <svg class="icon" aria-hidden="true">
-                  <use href="#i-route"></use>
-                </svg>
+                <svg class="icon" aria-hidden="true"><use href="#i-route"></use></svg>
               </span>
               <span class="service-number">04</span>
             </div>
-
             <h3>Traslados programados</h3>
             <p>A tu taller, casa u otro destino.</p>
-
             <span class="service-link">
               Cotizar servicio
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-arrow"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-arrow"></use></svg>
             </span>
           </a>
         </div>
@@ -1817,7 +1535,6 @@
             width="1200"
             height="912"
           >
-
           <div class="about-caption">
             <strong>GRÚAS PORTILLO</strong>
             Con vos en el camino.
@@ -1826,12 +1543,10 @@
 
         <div>
           <p class="eyebrow">Nuestra empresa</p>
-
           <h2 class="section-title">
             Detrás de cada traslado,<br>
             hay alguien que importa.
           </h2>
-
           <p class="section-copy">
             Pedir ayuda debe ser sencillo. Te escuchamos,
             te damos un precio claro y llegamos rápido.
@@ -1839,23 +1554,15 @@
 
           <div class="values">
             <div class="value">
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-person"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-person"></use></svg>
               Atención cercana
             </div>
-
             <div class="value">
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-message"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-message"></use></svg>
               Comunicación clara
             </div>
-
             <div class="value">
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-shield"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-shield"></use></svg>
               Cuidado de tu vehículo
             </div>
           </div>
@@ -1866,11 +1573,8 @@
     <section id="testimonios" class="section testimonials">
       <div class="container">
         <p class="eyebrow">Experiencias del camino</p>
-        <h2 class="section-title">
-          La confianza se gana en cada servicio.
-        </h2>
+        <h2 class="section-title">La confianza se gana en cada servicio.</h2>
 
-        <!-- Contenido conservado de la versión proporcionada. -->
         <div class="testimonials-grid">
           <figure class="testimonial">
             <div class="review-stars" aria-label="5 estrellas">
@@ -1880,12 +1584,10 @@
               <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
               <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
             </div>
-
             <blockquote>
               “Llegaron en menos de 20 minutos a la salida a
               Puerto Cortés. Excelente trato.”
             </blockquote>
-
             <figcaption class="review-person">
               <strong>Carlos M.</strong>
               <small>Rescate en carretera</small>
@@ -1900,12 +1602,10 @@
               <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
               <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
             </div>
-
             <blockquote>
               “Me dieron el precio por WhatsApp desde el inicio.
               Sin sorpresas.”
             </blockquote>
-
             <figcaption class="review-person">
               <strong>Daniela R.</strong>
               <small>Vehículo particular</small>
@@ -1920,12 +1620,10 @@
               <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
               <svg class="icon" aria-hidden="true"><use href="#i-star"></use></svg>
             </div>
-
             <blockquote>
               “Movieron mi camión con mucho cuidado.
               Muy profesionales.”
             </blockquote>
-
             <figcaption class="review-person">
               <strong>José L.</strong>
               <small>Vehículo pesado</small>
@@ -1940,32 +1638,23 @@
         <div>
           <p class="eyebrow">Hablemos de tu traslado</p>
           <h2 class="section-title">Solicitá tu cotización.</h2>
-
           <p class="section-copy">
             Llená los datos y seguí la conversación por WhatsApp.
           </p>
 
           <ul class="contact-details">
             <li>
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-phone"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-phone"></use></svg>
               <a class="contact-phone" href="tel:+50433753174">
                 +504 3375-3174
               </a>
             </li>
-
             <li>
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-clock"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-clock"></use></svg>
               <span>Abierto 24 horas, todos los días</span>
             </li>
-
             <li>
-              <svg class="icon" aria-hidden="true">
-                <use href="#i-pin"></use>
-              </svg>
+              <svg class="icon" aria-hidden="true"><use href="#i-pin"></use></svg>
               <span>San Pedro Sula y alrededores</span>
             </li>
           </ul>
@@ -1989,26 +1678,12 @@
           <div class="form-grid">
             <label class="field" for="nombre">
               Nombre
-              <input
-                id="nombre"
-                name="nombre"
-                type="text"
-                placeholder="Tu nombre"
-                autocomplete="name"
-                maxlength="60"
-                required
-              >
+              <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" maxlength="60" required>
             </label>
 
             <label class="field" for="vehiculo">
               Vehículo
-              <input
-                id="vehiculo"
-                name="vehiculo"
-                type="text"
-                placeholder="Marca y modelo"
-                maxlength="60"
-              >
+              <input id="vehiculo" name="vehiculo" type="text" placeholder="Marca y modelo" maxlength="60">
             </label>
 
             <label class="field field-wide" for="servicio">
@@ -2023,32 +1698,17 @@
 
             <label class="field" for="ubicacion">
               ¿Dónde estás?
-              <input
-                id="ubicacion"
-                name="ubicacion"
-                type="text"
-                placeholder="Dirección o referencia"
-                maxlength="120"
-                required
-              >
+              <input id="ubicacion" name="ubicacion" type="text" placeholder="Dirección o referencia" maxlength="120" required>
             </label>
 
             <label class="field" for="destino">
               Destino
-              <input
-                id="destino"
-                name="destino"
-                type="text"
-                placeholder="¿A dónde lo llevamos?"
-                maxlength="120"
-              >
+              <input id="destino" name="destino" type="text" placeholder="¿A dónde lo llevamos?" maxlength="120">
             </label>
           </div>
 
           <button class="button button-primary form-submit" type="submit">
-            <svg class="wa-icon" aria-hidden="true">
-              <use href="#i-whatsapp"></use>
-            </svg>
+            <svg class="wa-icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
             Continuar por WhatsApp
           </button>
 
@@ -2081,14 +1741,11 @@
           target="_blank"
           rel="noopener noreferrer"
         >
-          <svg class="wa-icon" aria-hidden="true">
-            <use href="#i-whatsapp"></use>
-          </svg>
+          <svg class="wa-icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
           Pedir grúa por WhatsApp
         </a>
       </div>
     </section>
-
   </main>
 
   <footer class="footer">
@@ -2101,7 +1758,6 @@
           height="762"
           loading="lazy"
         >
-
         <div>
           <h3>GRÚAS PORTILLO</h3>
           <p>Con vos en el camino.</p>
@@ -2110,7 +1766,6 @@
 
       <div>
         <h3>Explorá el sitio</h3>
-
         <nav class="footer-nav" aria-label="Navegación del pie de página">
           <a href="#inicio">Inicio</a>
           <a href="#servicios">Servicios</a>
@@ -2121,7 +1776,6 @@
 
       <div class="footer-contact">
         <h3>Hablemos de tu traslado</h3>
-
         <a
           class="quote-link"
           href="https://wa.me/50433753174?text=Hola%20Gr%C3%BAas%20Portillo%2C%20necesito%20una%20cotizaci%C3%B3n."
@@ -2130,7 +1784,6 @@
         >
           Solicitar cotización
         </a>
-
         <a href="tel:+50433753174">+504 3375-3174</a>
       </div>
     </div>
@@ -2150,9 +1803,7 @@
     rel="noopener noreferrer"
     aria-label="Escribir por WhatsApp"
   >
-    <svg class="wa-icon" aria-hidden="true">
-      <use href="#i-whatsapp"></use>
-    </svg>
+    <svg class="wa-icon" aria-hidden="true"><use href="#i-whatsapp"></use></svg>
     <span>WhatsApp</span>
   </a>
 
@@ -2172,7 +1823,6 @@
 
       menuToggle.addEventListener("click", () => {
         const open = mobileNav.classList.toggle("open");
-
         menuToggle.setAttribute("aria-expanded", String(open));
         menuToggle.setAttribute(
           "aria-label",
@@ -2185,96 +1835,49 @@
       });
 
       document.addEventListener("keydown", (event) => {
-        if (event.key === "Escape") {
-          closeMenu();
-        }
+        if (event.key === "Escape") closeMenu();
       });
 
       window.addEventListener("resize", () => {
-        if (window.innerWidth > 1100) {
-          closeMenu();
-        }
+        if (window.innerWidth > 1100) closeMenu();
       });
 
-      // Carrusel
+      // Carrusel automático
       const hero = document.getElementById("inicio");
       const slides = [...hero.querySelectorAll(".hero-slide")];
       const dots = [...hero.querySelectorAll(".slider-dot")];
-      const previous = hero.querySelector(".slider-prev");
-      const next = hero.querySelector(".slider-next");
-      const pauseButton = hero.querySelector(".slider-pause");
-      const pauseIcon = pauseButton.querySelector("use");
-
       const reducedMotion = window.matchMedia(
         "(prefers-reduced-motion: reduce)"
       );
 
       let currentSlide = 0;
-      let timer;
-      let userPaused = reducedMotion.matches;
-      let pointerInside = false;
+      let sliderTimer;
 
       function showSlide(index) {
         currentSlide = (index + slides.length) % slides.length;
 
         slides.forEach((slide, slideIndex) => {
           const active = slideIndex === currentSlide;
-
           slide.classList.toggle("active", active);
           slide.setAttribute("aria-hidden", String(!active));
         });
 
         dots.forEach((dot, dotIndex) => {
           const active = dotIndex === currentSlide;
-
           dot.classList.toggle("active", active);
           dot.setAttribute("aria-pressed", String(active));
         });
       }
 
-      function stopSlider() {
-        window.clearInterval(timer);
-      }
-
-      function updatePauseButton() {
-        pauseButton.setAttribute("aria-pressed", String(userPaused));
-        pauseButton.setAttribute(
-          "aria-label",
-          userPaused ? "Reanudar carrusel" : "Pausar carrusel"
-        );
-
-        pauseIcon.setAttribute(
-          "href",
-          userPaused ? "#i-play" : "#i-pause"
-        );
-      }
-
       function startSlider() {
-        stopSlider();
+        window.clearInterval(sliderTimer);
 
-        if (
-          userPaused ||
-          document.hidden ||
-          pointerInside ||
-          hero.contains(document.activeElement)
-        ) {
-          return;
-        }
+        if (document.hidden || reducedMotion.matches) return;
 
-        timer = window.setInterval(() => {
+        sliderTimer = window.setInterval(() => {
           showSlide(currentSlide + 1);
         }, 6000);
       }
-
-      previous.addEventListener("click", () => {
-        showSlide(currentSlide - 1);
-        startSlider();
-      });
-
-      next.addEventListener("click", () => {
-        showSlide(currentSlide + 1);
-        startSlider();
-      });
 
       dots.forEach((dot, index) => {
         dot.addEventListener("click", () => {
@@ -2283,42 +1886,13 @@
         });
       });
 
-      pauseButton.addEventListener("click", () => {
-        userPaused = !userPaused;
-        updatePauseButton();
-        startSlider();
-      });
-
-      hero.addEventListener("mouseenter", () => {
-        pointerInside = true;
-        stopSlider();
-      });
-
-      hero.addEventListener("mouseleave", () => {
-        pointerInside = false;
-        startSlider();
-      });
-
-      hero.addEventListener("focusin", stopSlider);
-
-      hero.addEventListener("focusout", () => {
-        window.setTimeout(startSlider, 0);
-      });
-
       document.addEventListener("visibilitychange", startSlider);
 
       if (reducedMotion.addEventListener) {
-        reducedMotion.addEventListener("change", (event) => {
-          if (event.matches) {
-            userPaused = true;
-            updatePauseButton();
-            stopSlider();
-          }
-        });
+        reducedMotion.addEventListener("change", startSlider);
       }
 
       showSlide(0);
-      updatePauseButton();
       startSlider();
 
       // Formulario de cotización
@@ -2327,12 +1901,9 @@
       quoteForm.addEventListener("submit", (event) => {
         event.preventDefault();
 
-        if (!quoteForm.reportValidity()) {
-          return;
-        }
+        if (!quoteForm.reportValidity()) return;
 
         const data = new FormData(quoteForm);
-
         const nombre = String(data.get("nombre") || "").trim();
         const vehiculo = String(data.get("vehiculo") || "").trim();
         const servicio = String(data.get("servicio") || "").trim();
@@ -2363,6 +1934,5 @@
         new Date().getFullYear();
     })();
   </script>
-
 </body>
 </html>
